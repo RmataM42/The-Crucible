@@ -18,9 +18,9 @@ except PermissionError:
 
 
 # Debug: See if xytech_folders[] comes out correctly
-# print("\nDebug test:  xytech_folders[]\n")
-# for x, folder in enumerate(xytech_folders, start=1):
-#     print(x, folder.strip())
+print("\nDebug test:  xytech_folders[]\n")
+for x, folder in enumerate(xytech_folders, start=1):
+    print(x, folder.strip())
 
 # print(xytech_folders)
 #import Baselight_export.txt
