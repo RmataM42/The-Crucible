@@ -13,9 +13,12 @@ parser.add_argument("--xytech", metavar='', help="Xytech stuff")
 parser.add_argument("--process", metavar='', help="Process stuff")
 parser.add_argument("--output", metavar='', help="Output stuff")
 # debug: argparse
-parser.add_argument("--frame-timecode", metavar='', type=int, help="Frame to timecode; must follow by an integer to calcualte")
-# debug baselight xytech from project 1
-parser.add_argument("-bx", action='store_true', help="Project 1: output baselight+xytech w/ frame range")
+parser.add_argument("--timecode", metavar='', type=int, help="Frame to timecode; must follow by an integer to calcualte")
+# debug: baselight & xytech from project 1
+parser.add_argument("-bx", action='store_true', help="From Project 1: Create csv with location and frame to fix")
+# debug: matches frame to fix with timecode
+parser.add_argument("--frame-timecode", action='store_true', help="Write csv: matches frame to fix with time code")
+
 args = parser.parse_args()
 
 # File path
@@ -88,6 +91,7 @@ def baselight_xytech_csv():
                         writer.writerow([new_file_path, str(head)])
                     else:
                         writer.writerow([new_file_path, str(head) + '-' + str(last)])
+            print("Create baselight_xytech.csv successfully")
     except FileNotFoundError:
         print("Baselight_export.txt file not found.")
         return
@@ -142,7 +146,9 @@ def output_frame_to_timecode():
 
 # output_frame_to_timecode()
 
-if args.frame_timecode:
+if args.timecode:
     print(f"Frame {args.frame_timecode} is {calculate_frame_to_timecode(args.frame_timecode)} at 24 fps")
 if args.bx:
     baselight_xytech_csv()
+if args.frame_timecode:
+    output_frame_to_timecode()

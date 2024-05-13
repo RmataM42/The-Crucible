@@ -1,64 +1,64 @@
-location,Frames to fix
-/hpsans13/production/Dune2/reel1/partA/1920x1080,2-4
-/hpsans13/production/Dune2/reel1/partA/1920x1080,31-33
-/hpsans13/production/Dune2/reel1/partA/1920x1080,67-70
-/hpsans13/production/Dune2/reel1/partA/1920x1080,122-123
-/hpsans13/production/Dune2/reel1/partA/1920x1080,155
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1023
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1111-1112
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1160
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1201-1205
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1211-1215
-/hpsans12/production/Dune2/reel1/VFX/Hydraulx,1251-1253
-/hpsans12/production/Dune2/reel1/VFX/Hydraulx,1260
-/hpsans12/production/Dune2/reel1/VFX/Hydraulx,1270-1272
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1302-1303
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1310
-/hpsans13/production/Dune2/reel1/partA/1920x1080,1500
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5000-5002
-/hpsans15/production/Dune2/pickups/shot_1ab/1920x1080,5010-5014
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5111
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5122
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5133
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5144
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5155
-/hpsans13/production/Dune2/reel1/partA/1920x1080,5166
-/hpsans13/production/Dune2/reel1/VFX/Framestore,6188-6191
-/hpsans12/production/Dune2/reel1/VFX/Hydraulx,6197-6199
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6200-6201
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6209
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6212
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6219
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6233-6234
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6267
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6269
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6271
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6278
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6282
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6288-6290
-/hpsans13/production/Dune2/reel1/partA/1920x1080,6292-6294
-/hpsans13/production/Dune2/reel1/partB/1920x1080,6409-6411
-/hpsans13/production/Dune2/reel1/partB/1920x1080,6413
-/hpsans13/production/Dune2/reel1/partB/1920x1080,6450
-/hpsans13/production/Dune2/reel1/partB/1920x1080,6666-6668
-/hpsans13/production/Dune2/reel1/partB/1920x1080,6670-6671
-/hpsans13/production/Dune2/reel1/partB/1920x1080,6680-6684
-/hpsans14/production/Dune2/reel1/VFX/AnimalLogic,6832-6834
-/hpsans14/production/Dune2/reel1/VFX/AnimalLogic,6911-6914
-/hpsans13/production/Dune2/reel1/partB/1920x1080,8845
-/hpsans12/production/Dune2/reel1/VFX/Hydraulx,8846
-/hpsans13/production/Dune2/reel1/VFX/Framestore,8847
-/hpsans11/production/Dune2/pickups/shot_2b/1920x1080,10001-10002
-/hpsans11/production/Dune2/pickups/shot_2b/1920x1080,10008
-/hpsans11/production/Dune2/pickups/shot_2b/1920x1080,11113
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12011
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12021
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12031
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12041
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12051
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12111
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12121
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12131
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12141
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12200
-/hpsans13/production/Dune2/reel1/partB/1920x1080,12211
+location,Frames to fix,Timecode
+/hpsans13/production/Dune2/reel1/partA/1920x1080,4-Feb,00:00:00:02 - 00:00:00:04
+/hpsans13/production/Dune2/reel1/partA/1920x1080,31-33,00:00:01:07 - 00:00:01:09
+/hpsans13/production/Dune2/reel1/partA/1920x1080,67-70,00:00:02:19 - 00:00:02:22
+/hpsans13/production/Dune2/reel1/partA/1920x1080,122-123,00:00:05:02 - 00:00:05:03
+/hpsans13/production/Dune2/reel1/partA/1920x1080,155,00:00:06:11
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1023,00:00:42:15
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1111-1112,00:00:46:07 - 00:00:46:08
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1160,00:00:48:08
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1201-1205,00:00:50:01 - 00:00:50:05
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1211-1215,00:00:50:11 - 00:00:50:15
+/hpsans12/production/Dune2/reel1/VFX/Hydraulx,1251-1253,00:00:52:03 - 00:00:52:05
+/hpsans12/production/Dune2/reel1/VFX/Hydraulx,1260,00:00:52:12
+/hpsans12/production/Dune2/reel1/VFX/Hydraulx,1270-1272,00:00:52:22 - 00:00:53:00
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1302-1303,00:00:54:06 - 00:00:54:07
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1310,00:00:54:14
+/hpsans13/production/Dune2/reel1/partA/1920x1080,1500,00:01:02:12
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5000-5002,00:03:28:08 - 00:03:28:10
+/hpsans15/production/Dune2/pickups/shot_1ab/1920x1080,5010-5014,00:03:28:18 - 00:03:28:22
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5111,00:03:32:23
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5122,00:03:33:10
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5133,00:03:33:21
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5144,00:03:34:08
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5155,00:03:34:19
+/hpsans13/production/Dune2/reel1/partA/1920x1080,5166,00:03:35:06
+/hpsans13/production/Dune2/reel1/VFX/Framestore,6188-6191,00:04:17:20 - 00:04:17:23
+/hpsans12/production/Dune2/reel1/VFX/Hydraulx,6197-6199,00:04:18:05 - 00:04:18:07
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6200-6201,00:04:18:08 - 00:04:18:09
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6209,00:04:18:17
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6212,00:04:18:20
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6219,00:04:19:03
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6233-6234,00:04:19:17 - 00:04:19:18
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6267,00:04:21:03
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6269,00:04:21:05
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6271,00:04:21:07
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6278,00:04:21:14
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6282,00:04:21:18
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6288-6290,00:04:22:00 - 00:04:22:02
+/hpsans13/production/Dune2/reel1/partA/1920x1080,6292-6294,00:04:22:04 - 00:04:22:06
+/hpsans13/production/Dune2/reel1/partB/1920x1080,6409-6411,00:04:27:01 - 00:04:27:03
+/hpsans13/production/Dune2/reel1/partB/1920x1080,6413,00:04:27:05
+/hpsans13/production/Dune2/reel1/partB/1920x1080,6450,00:04:28:18
+/hpsans13/production/Dune2/reel1/partB/1920x1080,6666-6668,00:04:37:18 - 00:04:37:20
+/hpsans13/production/Dune2/reel1/partB/1920x1080,6670-6671,00:04:37:22 - 00:04:37:23
+/hpsans13/production/Dune2/reel1/partB/1920x1080,6680-6684,00:04:38:08 - 00:04:38:12
+/hpsans14/production/Dune2/reel1/VFX/AnimalLogic,6832-6834,00:04:44:16 - 00:04:44:18
+/hpsans14/production/Dune2/reel1/VFX/AnimalLogic,6911-6914,00:04:47:23 - 00:04:48:02
+/hpsans13/production/Dune2/reel1/partB/1920x1080,8845,00:06:08:13
+/hpsans12/production/Dune2/reel1/VFX/Hydraulx,8846,00:06:08:14
+/hpsans13/production/Dune2/reel1/VFX/Framestore,8847,00:06:08:15
+/hpsans11/production/Dune2/pickups/shot_2b/1920x1080,10001-10002,00:06:56:17 - 00:06:56:18
+/hpsans11/production/Dune2/pickups/shot_2b/1920x1080,10008,00:06:57:00
+/hpsans11/production/Dune2/pickups/shot_2b/1920x1080,11113,00:07:43:01
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12011,00:08:20:11
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12021,00:08:20:21
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12031,00:08:21:07
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12041,00:08:21:17
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12051,00:08:22:03
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12111,00:08:24:15
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12121,00:08:25:01
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12131,00:08:25:11
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12141,00:08:25:21
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12200,00:08:28:08
+/hpsans13/production/Dune2/reel1/partB/1920x1080,12211,00:08:28:19
