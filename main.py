@@ -4,6 +4,7 @@ import os
 import csv
 import sys
 import pandas as pd
+import subprocess
 
 # Argparse setup
 parser = ArgumentParser(description='It does frame IO... stuff..')
@@ -19,7 +20,7 @@ parser.add_argument("-bx", action='store_true', help="From Project 1: Create csv
 # debug: matches frame to fix with timecode
 parser.add_argument("--frame-timecode", action='store_true', help="Write csv: matches frame to fix with time code")
 
-args = parser.parse_args()
+args = parser.parse_args()                       
 
 # File path
 Xytech_file_path = "baselight_xytech/Sample_Xytech.txt"
@@ -144,7 +145,37 @@ def output_frame_to_timecode():
     
     print("Timecodes added to baselight_xytech.csv successfully!")
 
-# output_frame_to_timecode()
+def extract_timecode(file_path):
+    try:
+        # Command to extract timecode information
+        command = [
+            'ffmpeg',
+            '-i', file_path,
+            '-vf', 'showinfo',
+            '-f', 'null', 
+            '-'
+        ]
+
+        # Run the command
+        result = subprocess.run(command, stderr=subprocess.PIPE, text=True, check=True)
+        
+        # Extract timecode information from the stderr output
+        timecodes = []
+        for line in result.stderr.split('\n'):
+            if 'showinfo' in line and 'pts_time:' in line:
+                parts = line.split('pts_time:')
+                if len(parts) > 1:
+                    timecode = float(parts[1].split(' ')[0])
+                    timecodes.append(timecode)
+        
+        return timecodes
+
+    except subprocess.CalledProcessError as e:
+        print(f"ffmpeg command failed with error: {e.stderr}")
+        return []
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
 
 if args.timecode:
     print(f"Frame {args.frame_timecode} is {calculate_frame_to_timecode(args.frame_timecode)} at 24 fps")
