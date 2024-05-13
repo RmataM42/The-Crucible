@@ -11,7 +11,7 @@ parser = ArgumentParser(description='It does frame IO... stuff..')
 
 parser.add_argument("--baselight", metavar='', help="Baselight stuff")
 parser.add_argument("--xytech", metavar='', help="Xytech stuff")
-parser.add_argument("--process", metavar='', help="Process stuff")
+parser.add_argument('--process', required=True, help='Path to the video file')
 parser.add_argument("--output", metavar='', help="Output stuff")
 # debug: argparse
 parser.add_argument("--timecode", metavar='', type=int, help="Frame to timecode; must follow by an integer to calcualte")
@@ -195,8 +195,8 @@ def timecode_to_seconds(timecode, fps=24):
 def output_final_file():
 
     # Example usage
-    file_path = '/Users/amatamuadthong/Desktop/467_multi_media/Project/The-Crucible/Reference/twitch_nft_demo.mp4'
-    timecodes = extract_timecode(file_path)
+    mp4_file_path = args.process
+    timecodes = extract_timecode(mp4_file_path)
 
     # Convert timecodes to HH:MM:SS:FF format
     formatted_timecodes = [convert_seconds_to_timecode(tc) for tc in timecodes]
@@ -228,12 +228,11 @@ def output_final_file():
     print(f"Filtered data has been written to {output_file_path}")
 
 
-
-output_final_file()
-
 if args.timecode:
     print(f"Frame {args.frame_timecode} is {calculate_frame_to_timecode(args.frame_timecode)} at 24 fps")
 if args.bx:
     baselight_xytech_csv()
 if args.frame_timecode:
     output_frame_to_timecode()
+if args.process:
+    output_final_file()
