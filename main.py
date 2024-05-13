@@ -221,8 +221,11 @@ def output_final_file():
 
     filtered_df = pd.DataFrame(matching_rows)
 
-    # Write the filtered rows to an Excel file
-    output_file_path = '/Users/amatamuadthong/Desktop/467_multi_media/Project/The-Crucible/thumbnail2.xlsx'
+    # Get the current working directory
+    current_directory = os.getcwd()
+
+    # Construct the file path
+    output_file_path = os.path.join(current_directory, 'Thumbnail.xlsx')
     filtered_df.to_excel(output_file_path, index=False, engine='openpyxl')
 
     print(f"Filtered data has been written to {output_file_path}")
