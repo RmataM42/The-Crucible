@@ -225,7 +225,7 @@ def export_timecode_match():
 def export_final_file():
         # Paths to the Excel file and MP4 file
     file_path = '/Users/amatamuadthong/Desktop/467_multi_media/Project/The-Crucible/Thumbnail.xlsx'
-    mp4_file_path = '/Users/amatamuadthong/Desktop/467_multi_media/Project/The-Crucible/Reference/twitch_nft_demo.mp4'
+    mp4_file_path = args.process
 
     # Load the Excel file
     excel_data = pd.read_excel(file_path)
