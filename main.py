@@ -12,14 +12,12 @@ from openpyxl.drawing.image import Image
 # Argparse setup
 parser = ArgumentParser(description='It does timecode and frame IO... stuff..')
 
-parser.add_argument("--baselight", metavar='', help="Baselight stuff")
-parser.add_argument("--xytech", metavar='', help="Xytech stuff")
+parser.add_argument("--baselight", action='store_true', help="From Project 1: Create csv with location and frame to fix")
+parser.add_argument("--xytech", metavar='', help="Xytech file")
 parser.add_argument('--process', required=True, help='Path to the video file')
 parser.add_argument("--output", action='store_true', help="Generate excel file w/ matching timecode and thumbnail")
 # debug: argparse
-parser.add_argument("--timecode", metavar='', type=int, help="Frame to timecode; must follow by an integer to calcualte")
-# debug: baselight & xytech from project 1
-parser.add_argument("-bx", action='store_true', help="From Project 1: Create csv with location and frame to fix")
+parser.add_argument("--timecode", metavar='', type=int, help="Debugging: Frame to timecode; must follow by an integer to calcualte")
 # debug: matches frame to fix with timecode
 parser.add_argument("--frame-timecode", action='store_true', help="Write csv: matches frame to fix with time code")
 
@@ -341,7 +339,7 @@ def frame_io():
 
 if args.timecode:
     print(f"Frame {args.frame_timecode} is {calculate_frame_to_timecode(args.frame_timecode)} at 24 fps")
-if args.bx:
+if args.baselight:
     baselight_xytech_csv()
 if args.frame_timecode:
     output_frame_to_timecode()
