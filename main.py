@@ -7,12 +7,12 @@ import pandas as pd
 import subprocess
 
 # Argparse setup
-parser = ArgumentParser(description='It does frame IO... stuff..')
+parser = ArgumentParser(description='It does timecode and frame IO... stuff..')
 
 parser.add_argument("--baselight", metavar='', help="Baselight stuff")
 parser.add_argument("--xytech", metavar='', help="Xytech stuff")
 parser.add_argument('--process', required=True, help='Path to the video file')
-parser.add_argument("--output", metavar='', help="Output stuff")
+parser.add_argument("--output", action='store_true', help="Generate excel file w/ matching timecode and thumbnail")
 # debug: argparse
 parser.add_argument("--timecode", metavar='', type=int, help="Frame to timecode; must follow by an integer to calcualte")
 # debug: baselight & xytech from project 1
@@ -174,14 +174,6 @@ def extract_timecode(file_path):
         print(f"An error occurred: {e}")
         return []
 
-def convert_seconds_to_timecode(seconds, fps=24):
-    hours = int(seconds // 3600)
-    minutes = int((seconds % 3600) // 60)
-    secs = int(seconds % 60)
-    frames = int((seconds - int(seconds)) * fps)
-    
-    return "{:02d}:{:02d}:{:02d}:{:02d}".format(hours, minutes, secs, frames)
-
 def timecode_to_seconds(timecode, fps=24):
     parts = timecode.split(':')
     hours = int(parts[0])
@@ -197,9 +189,6 @@ def output_final_file():
     # Example usage
     mp4_file_path = args.process
     timecodes = extract_timecode(mp4_file_path)
-
-    # Convert timecodes to HH:MM:SS:FF format
-    formatted_timecodes = [convert_seconds_to_timecode(tc) for tc in timecodes]
 
     # Read the CSV file
     csv_file_path = '/Users/amatamuadthong/Desktop/467_multi_media/Project/The-Crucible/baselight_xytech.csv'
@@ -238,4 +227,6 @@ if args.bx:
 if args.frame_timecode:
     output_frame_to_timecode()
 if args.process:
+    print("Process video file successfully")
+if args.output:
     output_final_file()
